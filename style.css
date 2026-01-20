@@ -1,75 +1,73 @@
 body {
-      font-family: 'Poppins', sans-serif;
-    }
+  font-family: 'Poppins', sans-serif;
+}
 
-    /* BALLOONS */
-    .balloon {
-      position: absolute;
-      bottom: -150px;
-      width: 60px;
-      height: 80px;
-      border-radius: 50%;
-      animation: floatUp 14s linear infinite;
-    }
+/* BALLOONS */
+.balloon {
+  position: absolute;
+  bottom: -150px;
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+  animation: floatUp 14s linear infinite;
+}
 
-    .balloon::after {
-      content: '';
-      position: absolute;
-      bottom: -30px;
-      left: 50%;
-      width: 2px;
-      height: 35px;
-      background: rgba(255,255,255,0.7);
-      transform: translateX(-50%);
-    }
+.balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 2px;
+  height: 35px;
+  background: rgba(255,255,255,0.7);
+  transform: translateX(-50%);
+}
 
-    @keyframes floatUp {
-      0% { transform: translateY(0); opacity: 0; }
-      10% { opacity: 1; }
-      100% { transform: translateY(-120vh); opacity: 0; }
-    }
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
 
-    /* FADE */
-    .fade-in {
-      animation: fadeIn 1.2s ease-out forwards;
-    }
+/* FADE */
+.fade-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-    /* CONFETTI */
-    .confetti {
-      position: fixed;
-      width: 10px;
-      height: 10px;
-      top: -10px;
-      animation: confettiFall 3s linear forwards;
-    }
+/* CONFETTI */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: -10px;
+  animation: confettiFall 3s linear forwards;
+}
 
-    @keyframes confettiFall {
-      to {
-        transform: translateY(110vh) rotate(720deg);
-        opacity: 0;
-      }
-    }
+@keyframes confettiFall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
 
-    .floating-balloon {
-    position: absolute;
-    bottom: -150px;
-    border-radius: 1rem;
-    object-fit: cover;
-    }
+.floating-balloon {
+  position: absolute;
+  bottom: -150px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
 
-    @keyframes floatUpBalloon {
-    0% { transform: translateY(0); opacity: 0; }
-    10% { opacity: 1; }
-    100% { transform: translateY(-130vh); opacity: 0; }
-    }
+@keyframes floatUpBalloon {
+  0% { transform: translateY(0); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(-130vh); opacity: 0; }
+}
 
-    #audio {
-    display: none;
-    }
-
-
+#audio {
+  display: none;
+}
