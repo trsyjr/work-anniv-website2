@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Work Anniversary</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-y-auto min-h-screen bg-gradient-to-br from-purple-700 via-red-500 to-[#C68642]">
+    
+  <!-- BALLOONS -->
+  <div class="pointer-events-none fixed inset-0 overflow-hidden">
+    <div class="balloon bg-purple-500 left-[10%]"></div>
+    <div class="balloon bg-red-500 left-[30%]" style="animation-delay:2s"></div>
+    <div class="balloon bg-[#C68642] left-[50%]" style="animation-delay:4s"></div>
+    <div class="balloon bg-purple-400 left-[70%]" style="animation-delay:1s"></div>
+    <div class="balloon bg-red-400 left-[85%]" style="animation-delay:3s"></div>
+  </div>
+
+  <!-- LANDING -->
+  <section id="landing" class="relative z-10 min-h-screen flex items-center justify-center text-center px-6">
+    <div class="max-w-5xl text-white fade-in">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+        Happy 2nd Work Anniversary, Ms. Noreen & Ms. Cla
+      </h1>
+      <p class="text-lg md:text-xl opacity-90 mb-10">
+        A celebration of dedication, passion, and excellence at work.
+      </p>
+
+      <button onclick="revealCelebrants()"
+        class="bg-red-500 hover:bg-[#C68642] px-10 py-4 rounded-full font-semibold text-lg shadow-xl transition-all duration-300 hover:scale-110">
+        Celebrate with them
+      </button>
+    </div>
+  </section>
+  
+  <!-- CELEBRANT SECTION -->
+  <section id="celebrants" class="hidden relative z-10 px-6 py-16">
+    <div class="max-w-6xl mx-auto space-y-16 fade-in">
+
+      <!-- CELEBRANTS GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+        <!-- Noreen -->
+        <div class="bg-[#FDE8FF] rounded-3xl shadow-2xl p-8 md:p-12 text-center">
+          <div class="flex justify-center mb-6">
+            <img src="Assets/Noreen16.jpeg" class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover shadow-[0_15px_40px_rgba(234,128,252,0.6)] ring-[8px] ring-purple-500 transition-transform duration-500 hover:scale-105" alt="Ms. Noreen N. Data">
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold text-purple-700 mb-2">Ms. Noreen N. Data</h2>
+          <p class="text-lg font-medium text-gray-700 mb-4">
+            Celebrating her <span class="font-bold text-red-500">2nd work anniversary</span>
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Your dedication, passion, and guidance have been a true inspiration to the team. Thank you for all your hard work!
+          </p>
+        </div>
+
+        <!-- Maria Clarissa -->
+        <div class="bg-[#F5E6D0] rounded-3xl shadow-2xl p-8 md:p-12 text-center">
+            <div class="flex justify-center mb-6">
+            <img src="Assets/Cla11.JPG" class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover shadow-[0_15px_40px_rgba(198,134,66,0.6)] ring-[8px] ring-[#C68642] transition-transform duration-500 hover:scale-105" alt="Ms. Maria Clarissa D. Raquinel">
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#C68642] mb-2">Ms. Maria Clarissa D. Raquinel</h2>
+            <p class="text-lg font-medium text-gray-700 mb-4">
+            Celebrating her <span class="font-bold text-red-500">2nd work anniversary</span>
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+            Your enthusiasm, leadership, and unwavering dedication make a difference every day. We appreciate you!
+            </p>
+        </div>
+    </div>
+  </section>
+
+<!-- APPRECIATION CARD: Ms. Noreen -->
+<section id="appreciation-noreen" class="hidden relative z-10 px-6 py-16">
+  <div class="max-w-5xl mx-auto">
+    <div class="bg-[#FDE8FF] rounded-3xl shadow-2xl p-12 md:p-16 text-justify w-full">
+      <h3 class="text-3xl md:text-5xl font-bold text-purple-700 mb-8 text-center">
+        Happy 2nd Work Anniversary, Ms. Noreen!
+      </h3>
+      <div class="text-gray-700 leading-relaxed text-lg md:text-xl space-y-4">
+        <p>Congratulations on your second work anniversary as a permanent employee!</p>
+        <p>On this day, we acknowledge all your contributions, dedication, and commitment as a public servant. Your leadership has been instrumental to our Division’s success, and we truly appreciate all your dedication to mentoring us.</p>
+        <p>We recognize all your hardship in carrying out assigned training, your innovative problem-solving ways, your invaluable contributions to the team, and your exceptional leadership — we are incredibly grateful!</p>
+        <p>Thank you so much, Ms. Noreen, for being an essential part of our Division! Thank you for all the guidance and support!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPRECIATION CARD: Ms. Maria Clarissa -->
+<section id="appreciation-cla" class="hidden relative z-10 px-6 py-16">
+  <div class="max-w-5xl mx-auto">
+    <div class="bg-[#F5E6D0] rounded-3xl shadow-2xl p-12 md:p-16 text-justify w-full">
+      <h3 class="text-3xl md:text-5xl font-bold text-[#C68642] mb-8 text-center">
+        Happy 2nd Work Anniversary, Ms. Maria Clarissa!
+      </h3>
+      <div class="text-gray-700 leading-relaxed text-lg md:text-xl space-y-4">
+        <p>Congratulations on your second work anniversary as a permanent employee!</p>
+        <p>On this day, we acknowledge all your contributions, dedication, and commitment as a public servant. Your leadership has been instrumental to our Division’s success, and we truly appreciate all your dedication to mentoring us.</p>
+        <p>We recognize all your hardship in carrying out assigned training, your innovative problem-solving ways, your invaluable contributions to the team, and your exceptional leadership — we are incredibly grateful!</p>
+        <p>Thank you so much, Ms. Maria Clarissa, for being an essential part of our Division! Thank you for all the guidance and support!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FLOATING IMAGE SECTION -->
+  <section id="floating-images" class="hidden relative z-10 h-[120vh] overflow-hidden">
+    <h2 class="absolute inset-0 flex justify-center items-center text-4xl md:text-6xl font-bold text-white drop-shadow-xl text-center pointer-events-none max-w-4xl mx-auto px-4">
+      Happy 2nd Work Anniversary, Ms. Noreen & Ms. Maria Clarissa
+    </h2>
+  </section>
+
+  <audio id="bg-music" src="Assets/Celeb.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
