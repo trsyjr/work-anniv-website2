@@ -13,9 +13,9 @@ const noreenImages = [
 const claImages = [
   "Assets/Kleng1.jpeg","Assets/Kleng2.jpeg","Assets/Kleng3.JPG","Assets/Kleng4.JPG",
   "Assets/Kleng5.jpeg","Assets/Kleng6.jpeg","Assets/Kleng7.jpeg","Assets/Kleng8.jpeg",
-  "Assets/Kleng9.jpeg","Assets/Kleng10.jpeg","Assets/Kleng11.jpeg","Assets/Kleng12.jpeg",
+  "Assets/Kleng9.jpeg","Assets/Kleng10.jpeg","Assets/Kleng11.JPG","Assets/Kleng12.jpeg",
   "Assets/Kleng13.jpeg","Assets/Kleng14.JPG","Assets/Kleng15.JPG","Assets/Kleng16.JPG",
-  "Assets/Kleng17.JPG","Assets/Kleng18.jpg","Assets/Kleng19.gif"
+  "Assets/Kleng17.JPG","Assets/Kleng18.jpg","Assets/Kleng19.JPG","Assets/Kleng20.JPG"
 ];
 
 // --- Initialize page ---
