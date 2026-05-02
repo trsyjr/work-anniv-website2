@@ -1,19 +1,21 @@
 // ===== GLOBAL JS FOR FLOATING BALLOONS & IMAGES =====
 
 const noreenImages = [
-  "Assets/Noreen1.jpeg","Assets/Noreen2.jpeg","Assets/Noreen3.jpeg","Assets/Noreen4.jpeg",
-  "Assets/Noreen5.jpeg","Assets/Noreen6.jpeg","Assets/Noreen7.jpeg","Assets/Noreen8.jpeg",
-  "Assets/Noreen9.jpeg","Assets/Noreen10.jpeg","Assets/Noreen11.jpeg","Assets/Noreen12.jpeg",
-  "Assets/Noreen13.jpeg","Assets/Noreen14.jpeg","Assets/Noreen15.jpeg","Assets/Noreen16.jpeg",
-  "Assets/Purple.png","Assets/2P.png","Assets/Violet.png"
+  "Assets/Pic1.jpeg","Assets/Pic2.jpg","Assets/Pic3.jpeg","Assets/Pic4.jpg",
+  "Assets/Pic5.jpeg","Assets/Pic6.jpg","Assets/Pic7.jpeg","Assets/Pic8.jpg",
+  "Assets/Pic9.jpeg","Assets/Pic10.jpg","Assets/Pic11.jpeg","Assets/Pic12.jpg",
+  "Assets/Pic13.jpg","Assets/Pic14.jpg","Assets/Pic15.jpg","Assets/Pic16.jpg",
+  "Assets/Pic17.jpg","Assets/Pic18.jpg","Assets/Pic19.jpg","Assets/Pic20.JPG",
+  "Assets/Pic21.JPG","Assets/Pic22.jpg","Assets/Pic23.JPG","Assets/Pic24.JPG",
+  "Assets/Pic25.JPG","Assets/Pic26.JPG","Assets/Pic27.JPG","Assets/Pic28.JPG"
 ];
 
 const claImages = [
-  "Assets/Cla1.jpeg","Assets/Cla2.jpeg","Assets/Cla3.jpeg","Assets/Cla4.jpeg",
-  "Assets/Cla5.jpg","Assets/Cla6.jpeg","Assets/Cla7.jpg","Assets/Cla8.jpeg",
-  "Assets/Cla9.JPG","Assets/Cla10.jpeg","Assets/Cla11.JPG","Assets/Cla12.jpeg",
-  "Assets/Cla13.png","Assets/Cla14.jpg","Assets/Orange.png","Assets/2B.png",
-  "Assets/Gold.png"
+  "Assets/Kleng1.jpeg","Assets/Kleng2.jpeg","Assets/Kleng3.JPG","Assets/Kleng4.JPG",
+  "Assets/Kleng5.jpeg","Assets/Kleng6.jpeg","Assets/Kleng7.jpeg","Assets/Kleng8.jpeg",
+  "Assets/Kleng9.jpeg","Assets/Kleng10.jpeg","Assets/Kleng11.jpeg","Assets/Kleng12.jpeg",
+  "Assets/Kleng13.jpeg","Assets/Kleng14.JPG","Assets/Kleng15.JPG","Assets/Kleng16.JPG",
+  "Assets/Kleng17.JPG","Assets/Kleng18.jpg","Assets/Kleng19.gif"
 ];
 
 // --- Initialize page ---
@@ -27,13 +29,13 @@ function initPage(type, balloonQty = 20, imageQty = 5) {
 
   switch(type){
     case 'noreen':
-      balloonColors = ["#C084FC","#A855F7","#7C3AED"];
-      confettiColors = ["#C084FC","#A855F7","#7C3AED"];
+      balloonColors = ["#FACC15", "#FDE047", "#EAB308"];
+      confettiColors = ["#FACC15", "#FDE047", "#EAB308"];
       floatingImages = noreenImages;
       break;
     case 'clarissa':
-      balloonColors = ["#EAD7C3","#D6B89C","#B8977E"];
-      confettiColors = ["#EAD7C3","#D6B89C","#B8977E"];
+      balloonColors = ["#C084FC","#A855F7","#7C3AED"];
+      confettiColors = ["#C084FC","#A855F7","#7C3AED"];
       floatingImages = claImages;
       break;
     case 'landing':
